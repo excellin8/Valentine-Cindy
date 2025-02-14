@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Sweet Cindy 💝</title>
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            overflow: hidden;
+            touch-action: manipulation;
+        }
+
+        .valentine-card {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            min-height: 600px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .main-heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 60px;
+            height: 60px;
+            background: #ff4757;
+            animation: heartbeat 1.4s linear infinite;
+            z-index: 1;
+        }
+
+        .main-heart::before,
+        .main-heart::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: #ff4757;
+            border-radius: 50%;
+        }
+
+        .main-heart::before {
+            top: -30px;
+            left: 0;
+        }
+
+        .main-heart::after {
+            left: -30px;
+            top: 0;
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            margin-top: 40px;
+            z-index: 2;
+            transition: filter 0.4s ease;
+        }
+
+        h1 {
+            color: #ff4757;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        button {
+            padding: 12px 30px;
+            background: #ff4757;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255,71,87,0.4);
+            width: 80%;
+            max-width: 250px;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .hidden-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -45%);
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 300px;
+            z-index: 3;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hidden-message.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes heartbeat {
+            0% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+            25% { transform: translate(-50%, -50%) rotate(45deg) scale(1.1); }
+            50% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+            75% { transform: translate(-50%, -50%) rotate(45deg) scale(0.9); }
+            100% { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+        }
+
+        /* Floating hearts for mobile */
+        .floating-heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 71, 87, 0.6);
+            transform: rotate(45deg);
+            animation: float 6s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(45deg); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+        }
+
+        @media (min-width: 768px) {
+            .valentine-card {
+                width: 400px;
+                padding: 30px;
+            }
+            h1 { font-size: 2.2em; }
+            p { font-size: 1em; }
+        }
+
+        
+        @keyframes pulse {
+            0% { transform: scale(1);}
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .playing {
+            animation: pulse 1s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="valentine-card">
+        <div class="main-heart"></div>
+        <div class="content">
+            <h1>Happy Valentine's, Cindy! 💖</h1>
+            <p>Untuk cinta terindahku,<br>
+
+My Dearest,
+
+I know that our long-distance relationship has been a challenge for both of us, but I want you to know how grateful I am to have you in my life. Your loyalty and love mean the world to me, and they give me strength every day. 
+
+在这个漫长的距离中，我深深感受到我们之间的联系是多么珍贵。 (Zài zhège màncháng de jùlí zhōng, wǒ shēnshēn gǎnshòudào wǒmen zhī jiān de liánxì shì duōme zhēnguì.) Even though we are miles apart, my heart is always with you. 
+
+I cherish every moment we share, whether it’s through our late-night calls or sweet messages. You are my rock, and I believe that this distance will only make our love stronger. 
+
+我期待着我们能再次相聚的那一天。 (Wǒ qīdàizhe wǒmen néng zàicì xiāngjù de nà yītiān.) Until then, let’s keep building our dreams together. 
+
+Thank you for being such a loyal and wonderful girlfriend. I love you more than words can express.
+
+With all my love,  
+[Excell]
+</p>
+
+            <button onclick="showMessage()">💝 Buka Pesan Spesial</button>
+        </div>
+
+        <div id="secretMessage" class="hidden-message">
+            <h2>Untuk Cindy 💌</h2>
+            <p>"Di antara semua bintang di langit, kaulah yang paling terang,
+Seperti Chang’e di bulan, menyinari malamku dengan keindahan.
+Aku ingin menjadi Yue Lao-mu, menjaga senyummu selamanya,
+Mengikat cinta kita dalam takdir yang abadi."</p>
+            <button id="musicButton" onclick="playMusic()">🎶 click this please</button>
+        </div>
+    </div>
+
+    <audio id="ourSong" src="your-song.mp3"></audio>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('secretMessage');
+            const content = document.querySelector('.content');
+            
+            // Trigger animasi dengan menambahkan kelas
+            message.style.display = 'block';
+            setTimeout(() => {
+                message.classList.add('visible');
+            }, 10); // Delay kecil untuk memastikan transisi berjalan
+            content.style.filter = 'blur(3px)';
+            
+            // Tambahkan efek halo
+            message.style.boxShadow = '0 0 30px rgba(255, 71, 87, 0.3)';
+            setTimeout(() => {
+                message.style.boxShadow = '0 0 20px rgba(0,0,0,0.1)';
+            }, 500);
+        }
+
+        function playMusic() {
+            const audio = document.getElementById('ourSong');
+            const musicButton = document.getElementById('musicButton');
+            
+            audio.play();
+            musicButton.classList.add('playing');
+            
+            // Hentikan animasi ketika musik selesai
+            audio.onended = () => {
+                musicButton.classList.remove('playing');
+            };
+        }
+
+        // Floating hearts animation
+        function createFloatingHearts() {
+            const heartsCount = window.innerWidth < 768 ? 15 : 25;
+            for(let i = 0; i < heartsCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('floating-heart');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                document.body.appendChild(heart);
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('.floating-heart').forEach(el => el.remove());
+            createFloatingHearts();
+        });
+
+        document.addEventListener('DOMContentLoaded', createFloatingHearts);
+    </script>
+</body>
+</html>
